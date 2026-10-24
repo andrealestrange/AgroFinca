@@ -2,7 +2,7 @@
 
 Sitio web de una empresa que vende productos para el cuidado de animales y cultivos en Sahagún, Córdoba. Proyecto de Desarrollo Web, Ingeniería de Sistemas, Universidad de Córdoba.
 
-**Autora:** Andrea Carolina Flórez Suarrez
+**Autora:** Andrea Carolina Flórez Suarez
 **Docente:** Jose David Díaz Zurita
 
 **Estado:** Primera entrega (HTML5 semántico y diseño responsive). Siguen JavaScript con APIs y localStorage (Avance 2) y Vue.js (entrega final).
