@@ -24,4 +24,24 @@ function pintarCarrito() {
   totalEl.textContent = formatearPrecio(total);
 }
 
+const botonPagar = document.getElementById('pagar');
+const mensajePago = document.getElementById('mensaje-pago');
+
+botonPagar.addEventListener('click', function (evento) {
+  evento.preventDefault();
+
+  const carrito = leerCarrito();
+
+  if (carrito.length === 0) {
+    mensajePago.textContent = 'Tu carrito está vacío. Agrega productos antes de pagar.';
+    mensajePago.className = 'alerta mostrar err';
+    return;
+  }
+
+  guardarCarrito([]);
+  pintarCarrito();
+  mensajePago.textContent = '✅ ¡Gracias por tu compra! Tu pedido fue registrado.';
+  mensajePago.className = 'alerta mostrar ok';
+});
+
 pintarCarrito();
