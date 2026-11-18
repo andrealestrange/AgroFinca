@@ -6,6 +6,9 @@
   <meta name="description" content="Carrito de compras de AGROFINCA: revisa tus productos y el total.">
   <title>Carrito | AGROFINCA</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,7 +27,7 @@
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="productos.html">Productos</a></li>
-            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="carrito.html" aria-current="page">Carrito</a></li>
             <li><a href="login.html">Mi cuenta</a></li>
           </ul>
         </nav>
@@ -34,42 +37,15 @@
     <h1 class="titulo-seccion">Ver carrito</h1>
 
     <section class="carrito__lista" aria-label="Productos en el carrito">
-      <ul>
-        <li class="carrito__item">
-          <img src="img/vitaminas para bovinos.jpg" alt="Vitaminas para bovinos">
-          <div class="carrito__info">
-            <h2>Vitaminas para bovinos</h2>
-            <p>500 ml</p>
-          </div>
-          <p class="precio">$18.000</p>
-        </li>
-
-        <li class="carrito__item">
-          <img src="img/herbicida agricola.jpg" alt="Herbicida agrícola">
-          <div class="carrito__info">
-            <h2>Herbicida agrícola</h2>
-            <p>1 L</p>
-          </div>
-          <p class="precio">$42.000</p>
-        </li>
-
-        <li class="carrito__item">
-          <img src="img/abono organico.webp" alt="Abono orgánico">
-          <div class="carrito__info">
-            <h2>Abono orgánico</h2>
-            <p>40 kg</p>
-          </div>
-          <p class="precio">$48.000</p>
-        </li>
-      </ul>
-
+      <ul id="lista-carrito"></ul>
       <p class="carrito__total">
         <span>Total</span>
-        <strong class="precio">$108.000</strong>
+        <strong class="precio" id="total">$0</strong>
       </p>
     </section>
 
-    <a class="boton boton--pagar" href="#">Pagar</a>
+    <p id="mensaje-pago" class="alerta" role="status"></p>
+    <a class="boton boton--pagar" href="#" id="pagar">Pagar</a>
   </main>
 
   <footer class="site-footer" id="contacto">
@@ -81,5 +57,7 @@
     <p>© 2026 AgroFinca · Todos los derechos reservados · Sahagún, Córdoba, Colombia</p>
   </footer>
 
+  <script src="js/almacen.js"></script>
+  <script src="js/carrito.js"></script>
 </body>
 </html>
