@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AGROFINCA | Todo lo que tu campo necesita</title>
   <meta name="description" content="AGROFINCA: productos agropecuarios, veterinarios y alimentos para animales en Sahagún, Córdoba.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,7 +25,7 @@
   
     <nav aria-label="Menú principal">
       <ul>
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
         <li><a href="carrito.html">Carrito</a></li>
         <li><a href="login.html">Mi cuenta</a></li>
@@ -35,7 +37,9 @@
 
     <section class="hero">
       <img src="img/hero.jpg" alt="Finca con ganado y camino de tierra">
-      <h1>Todo lo que tu campo necesita en un solo lugar.</h1>
+      <span class="hero__etiqueta">🌾 Productos agropecuarios en Sahagún</span>
+      <h1>Todo lo que tu campo <em>necesita</em> en un solo lugar.</h1>
+      <p class="hero__texto">Vitaminas, alimentos, semillas y herramientas para tu ganado y tus cultivos.</p>
       <a href="productos.html" class="btn">Ver productos</a>
 
       <aside class="beneficios" aria-label="Por qué elegirnos">
@@ -66,6 +70,10 @@
     </nav>
     <p>© 2026 AgroFinca · Todos los derechos reservados · Sahagún, Córdoba, Colombia</p>
   </footer>
+
+  <a class="whatsapp" href="https://wa.me/57XXXXXXXXXX?text=Hola%20AGROFINCA%2C%20quiero%20información%20de%20sus%20productos" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
