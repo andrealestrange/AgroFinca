@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crear cuenta | AGROFINCA</title>
   <meta name="description" content="Crea tu cuenta en AGROFINCA para comprar productos agropecuarios.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,7 +28,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="productos.html">Productos</a></li>
             <li><a href="carrito.html">Carrito</a></li>
-            <li><a href="login.html">Mi cuenta</a></li>
+            <li><a href="login.html" aria-current="page">Mi cuenta</a></li>
           </ul>
         </nav>
       </header>
@@ -36,9 +37,7 @@
     <section class="formulario" aria-labelledby="titulo-registro">
       <h1 id="titulo-registro">Crear cuenta</h1>
 
-
-      <form action="#" method="post">
-
+      <form action="#" method="post" id="form-registro" novalidate>
 
         <label for="nombre">Nombre completo</label>
         <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60"
@@ -52,7 +51,7 @@
                title="10 dígitos, empieza por 3" placeholder="3201234567">
 
         <label for="nacimiento">Fecha de nacimiento</label>
-        <input type="date" id="nacimiento" name="nacimiento" required min="1930-01-01" max="2008-12-31">
+        <input type="date" id="nacimiento" name="nacimiento" required min="1930-01-01" max="2008-11-17">
         <span class="ayuda">Debes ser mayor de edad.</span>
 
         <label for="clave">Contraseña</label>
@@ -79,5 +78,6 @@
     <p>© 2026 AgroFinca · Todos los derechos reservados · Sahagún, Córdoba, Colombia</p>
   </footer>
 
+  <script src="js/validaciones.js"></script>
 </body>
 </html>
